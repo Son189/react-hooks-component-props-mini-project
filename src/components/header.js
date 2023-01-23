@@ -1,10 +1,10 @@
 import React from "react";
 import blogData from "../data/blog";
 
-function Header({name}){
+function Header(props){
     return(
     <header>
-        <h1>{blogData.name}</h1>
+        <h1>{props.name}</h1>
     </header>
 )}
 export default Header

@@ -4,14 +4,16 @@ import blogData from "../data/blog";
 import Header from "./header";
 import About from './about';
 import ArticleList from './ArticleList'
+import Article from "./Article";
 console.log(blogData);
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <About/>
-  <ArticleList />
+      <Header name={blogData.name}/>
+      <About image={blogData.image} about={blogData.about}/>
+  <ArticleList posts ={blogData.posts}/>
+  <Article/>
       You're on your own from here! Follow the deliverables; test things out in
       the browser as you write your code; and good luck!
     </div>

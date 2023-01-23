@@ -2,13 +2,14 @@ import React from "react";
 import blogData from "../data/blog";
 import ArticleList from './ArticleList';
 
-function Article(title ,date='January 1,1970' , preview){
+function Article(ArticleList){
     return(
         <article>
-            <h3>{title}</h3>
-            <small>{date}</small>
-            <p>{preview}</p>
-        </article>
+            
+            <h3>{ArticleList.title}</h3>
+            <small>{ArticleList.date}</small>
+            <p>{ArticleList.preview}</p>
+      </article>
     )
 }
 export default Article
